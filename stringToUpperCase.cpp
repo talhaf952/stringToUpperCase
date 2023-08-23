@@ -10,9 +10,10 @@ int main()
 	// Convert to uppercase
     string uppercaseInput = input;
     transform(uppercaseInput.begin(), uppercaseInput.end(), uppercaseInput.begin(), ::toupper);
-    
+    string lowercaseInput = input;
+    transform(lowercaseInput.begin(), lowercaseInput.end(), lowercaseInput.begin(), ::tolower);                         
     cout << "Uppercase: " << uppercaseInput << endl;
-
+    cout << "Lowercase: " << lowercaseInput << endl;
 
 	return 0;
 }
